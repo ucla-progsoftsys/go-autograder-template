@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        submodule: recursive
+        submodules: recursive
     - name: Create autograder.zip
       run: |
           chmod +x ./go-autograder/create_zip.sh
