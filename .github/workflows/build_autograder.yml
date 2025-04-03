@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Create autograder.zip
       run: |
@@ -22,7 +22,7 @@ jobs:
           ./go-autograder/create_zip.sh
 
     - name: Upload autograder.zip
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: autograder-${{ github.sha }}
         path: autograder.zip
