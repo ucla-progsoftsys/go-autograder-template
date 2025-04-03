@@ -26,3 +26,4 @@ jobs:
       with:
         name: autograder-${{ github.sha }}
         path: autograder.zip
+        submodules: recurisve
