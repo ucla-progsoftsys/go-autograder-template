@@ -54,6 +54,9 @@ This shell script is run (using `source custom_setup.sh`) during autograder buil
 ### custom_run_autograder.sh
 This shell script is run after the student's submission is copied into `/autograder/source/submission` and had their files overlayed, but before running the test cases. This can be used to, for example, check integrity of parts of files in the submission, verify file structure, check for extraneous/missing files, or search for known suspicious strings.
 
+### required_files.txt
+Put one path per line to a file that should exist - if any file path does not exist, the autograder will reject the submission and give 0 points.
+
 ## Testing
 
 Put the files in the `submission` folder to simulate a student uploading their work, and then run `./run_autograder.sh`. Run `./run_autograder.sh -d` to drop into a shell, similarly to the "Debug via SSH" functionality of Gradescope.
