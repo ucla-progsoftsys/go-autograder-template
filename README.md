@@ -4,7 +4,7 @@ This template is intended to be used in conjunction with https://github.com/ucla
 
 ## Using this template
 
-Optionally fork this repository into a (probably private) copy, or clone this repository locally with `git clone --recurse-submodules <repo-URL>`. Edit the configuration as required following the below information. Once done, run `./go-autograder/create_zip.sh` to create an `autograder.zip` file to upload to Gradescope, using the Ubuntu 22.04 Default base image. The Github Actions included in this template will run `create_zip.sh` and create the autograder for you - note that due to how Github Actions artifact uploading works, you need to unzip the Github-generated zip file, and then upload to gradescope the zip file extracted.
+Optionally fork this repository into a (probably private) copy, or clone this repository locally with `git clone --recurse-submodules <repo-URL>` (or if you forgot to do `--recurse-submodules`, run `git submodule update --init`). Edit the configuration as required following the below information. Once done, run `./go-autograder/create_zip.sh` to create an `autograder.zip` file to upload to Gradescope, using the Ubuntu 22.04 Default base image. The Github Actions included in this template will run `create_zip.sh` and create the autograder for you - note that due to how Github Actions artifact uploading works, you need to unzip the Github-generated zip file, and then upload to gradescope the zip file extracted.
 
 ## Config files
 
