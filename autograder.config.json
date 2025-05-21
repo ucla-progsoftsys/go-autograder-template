@@ -31,5 +31,10 @@
             "folder": "extra_credit",
             "visibility": "visible"
         }
-    ]
+    ],
+    "uploader": "bashupload.com",
+    "ratelimit": {
+        "count": 2,
+        "minutes": 60
+    }
 }

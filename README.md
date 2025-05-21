@@ -14,14 +14,19 @@ This JSON file is where you will configure your autograder for your particular a
 ```json=
 {
     "visibility": "visible", // Optional visibility setting for autograder results: visible, hidden, after_due_date, after_published
+    "uploader": "bashupload.com", // Optional: Defines location to upload results.json file, visible to students. Currently, only bashupload.com is supported
+    "ratelimit": { // Optional: Defines ratelimit of log uploading. 
+        "count": 2,
+        "minutes": 20
+    },
     "tests": [
         {
             "name": "TestAddTwoNumbers",  // The name of the test (must match the test name as defined in test files)
             "number": "1.1", // Optional (will just be numbered in order of array if no number given)
             "points": 5, // The point value of the test case
-            "visibility": "visible", // Optional visibility setting for test case: visible, hidden, after_due_date, after_published
-            "folder": "main", // Optional directory to run go test in, relative to root folder of submission files
-            "timeout": "600s", // Optional test timeout for go test command - fails if it goes beyond this time
+            "visibility": "visible", // Optional: visibility setting for test case: visible, hidden, after_due_date, after_published
+            "folder": "main", // Optional: directory to run go test in, relative to root folder of submission files
+            "timeout": "600s", // Optional: test timeout for go test command - fails if it goes beyond this time
             "count": 4 // Optional: specify number of times to run test case - if it fails once, entire test case fails. Note that timeouts (if set) are per run, not across all runs in a single test case
         },
         {
