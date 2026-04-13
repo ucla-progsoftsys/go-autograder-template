@@ -13,3 +13,7 @@ See `go-autograder/README.md` for configuration information, as exact options ma
 ## Testing
 
 Put the files in the `submission` folder to simulate a student uploading their work, and then run `./run_autograder.sh`. Run `./run_autograder.sh -d` to drop into a shell, similarly to the "Debug via SSH" functionality of Gradescope.
+
+## Updating the autograder version
+
+`cd go-autograder`, `git submodule update --init`, `git checkout <go autograder branch>` like `git checkout main`, `git pull`, then `cd ..` and `git add/git commit` to save the version update to the git repository.
